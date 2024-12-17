@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/py2cfg-{{ version }}.tar.gz
   sha256: 30c0d4a135161f31f2ae4f2c1520e449c59bbaee00798106aa5fff97d1205053
-  patches:
-    - pyproject.patch
 
 build:
   entry_points:
