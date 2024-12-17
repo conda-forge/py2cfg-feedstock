@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - poetry >=0.12.3
     - poetry-core
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - astor
     - pudb
     - websocket-server
@@ -41,6 +41,7 @@ test:
     - py2cfg --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://gitlab.com/classroomcode/py2cfg
