@@ -1,5 +1,6 @@
 {% set name = "py2cfg" %}
 {% set version = "1.0.2" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
