@@ -1,5 +1,5 @@
 {% set name = "py2cfg" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.4" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/py2cfg-{{ version }}.tar.gz
-  sha256: 30c0d4a135161f31f2ae4f2c1520e449c59bbaee00798106aa5fff97d1205053
+  sha256: 805bafbd5c5e71d6fd48cdf238f894178e91ac7bdd53a780962fdccccf21e818
 
 build:
   entry_points:
