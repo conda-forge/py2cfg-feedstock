@@ -23,7 +23,7 @@ build:
 
 requirements:
   host:
-    - python 3.12.*
+    - python ${{ python_min }}.*
     - poetry >=0.12.3
     - poetry-core
     - setuptools
@@ -44,7 +44,9 @@ tests:
       imports:
         - py2cfg
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
   - requirements:
       run:
         - pip
